@@ -1,0 +1,112 @@
+/* global */
+@keyframes ring{
+    100% {transform: scale(1.5);}
+}
+.grid{
+    padding-top: 12em;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto;
+}
+.menu{
+    grid-row: 1;
+    grid-column: 1;
+}
+.content{
+    grid-row: 1;
+    grid-column: 2;
+    padding-right: 5em;
+}
+.subContent{
+    border: 1px solid black;
+    border-radius: 0.5em;
+    background-color: gray;
+    padding: 0.2em;
+}
+body{
+    background-image: url("../img/wallpaper.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100vw 100vh;
+}
+/* Titre */
+.title{
+    text-align: center;
+}
+/* Magasin */
+.Span{
+    border: 1px solid gold;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    color: gold;
+}
+.Tooltip{
+    border: 1px solid gold;
+    border-radius: 0.5em;
+    background-color: rgba(198, 231, 12, 0.699);
+    width: fit-content;
+    display: grid;
+    color: black;
+    padding: 0.2em;
+}
+.Show{
+    color: darkslategrey;
+}
+.hide{
+    color: black;
+}
+/* Langue */
+.Language-Main{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10em;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.Language-None{
+    display: none;
+}
+.Language-Block{
+    display: block;
+}
+.Language-Content{
+    background-color: gray;
+    border: 1px solid gold;
+    border-radius: 0.2em;
+    margin: auto;
+    width: fit-content;
+    display: grid;
+}
+.Language-Menu{
+    padding: 0.5em;
+}
+.Language-Choice{
+    padding-left: 0.5em;
+}
+.Language-Choice:hover{
+    color: darkseagreen;
+    cursor: pointer;
+}
+.close{
+    padding-left: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+}
+.close:hover, .bonus:hover, .build:hover{
+    color: darkseagreen;
+    cursor: pointer;
+}
+/*imageClicker*/
+.ringClicker:hover{
+    cursor: pointer;
+}
+.ringClicker:active{
+    animation-name: ring;
+    animation-duration: 0.5s;
+}
+/* Boutique */

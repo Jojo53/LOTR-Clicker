@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTR-clicker</title>
+    <link rel="stylesheet" href="resources/css/normalize.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+<body>
+    <h1 id="title" class="title" data-i18n-key="title">Titre</h1>
+    <div class="grid">
+        <div class="menu">
+            <img id ="click" class="ringClicker" src="resources/img/ring.png" alt="Ring-Clicker" onclick="Click()" >
+        </div>
+        <div id='Content' class="content">
+            <div class="subContent">
+                <span>score : <span id="score"></span></span>
+            </div>
+            <div id="Shop" class="subContent">
+                <span data-i18n-key="shopTitle"></span>
+            </div>
+            <div id="Build" class="subContent">
+                <span data-i18n-key="buildTitle"></span>
+            </div>
+        </div>
+    </div>
+    <script src="resources/js/script.js"></script>
+    <script src="resources/js/localize.js"></script>
+</body>
+</html>
